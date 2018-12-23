@@ -24,8 +24,8 @@
 
     <!-- Flash Messages -->
     <% flash.each do |name, message| %>
-      <%= content_tag(:div, message, class,"alerr alert-info #{name}") %>
-      <% end %>
+    <%= content_tag(:div, message, class: "alert alert #{name}") %>
+    <% end %>
 
     <!-- Page Content -->
     <%= yield %>
